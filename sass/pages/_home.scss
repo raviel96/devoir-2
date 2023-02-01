@@ -1,0 +1,166 @@
+.container {
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 480px;
+    background-image: url("../../images/bkg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header__title {
+    position: absolute;
+    top: 271px;
+    left: 29px;
+}
+
+.header__title {
+
+    & h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+}
+
+.header__menu {
+    & p {
+        font-size: 1.2rem;
+    }
+}
+  
+// Main section
+.main-section {
+    padding-bottom: 45px;
+}
+
+.article {
+    margin-top: 50px;
+}
+
+.article__image {
+    & img {
+        width: 100%;
+        margin-left: 5px;
+    }
+
+}
+
+.article {
+
+    & h2 {
+        font-size: 1.5rem;
+        margin: 15px 0 15px 5px;
+    }
+
+    & a {
+        color: $link-color;
+    }
+
+    & p {
+        margin-left: 5px;
+    }
+}
+
+// form section 
+#submit-button {
+    background: $submit-button-background-color;
+}
+
+#reset-button {
+    background: $reset-button-background-color;
+}
+
+#submit-button ,#reset-button {
+    color: #fff;
+    border-width: 1px;
+}
+
+#submit-button:hover, #reset-button:hover {
+    background: $button-hover-color;
+    cursor: pointer;
+}
+
+.form-section {
+    background: url(../../images/bkg-form.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 15px 0 10px 10px;
+}
+
+.form {
+    background-color: $form-background-color;
+    padding: 0 0 8px 10px;
+    border-radius: 10px;
+
+    & h3{
+        padding: 20px 0 15px 0;
+        font-size: 1.3rem;
+    }
+
+    & h3, label {
+        color:$form-text-color;
+    }
+
+    & label {
+        display: block;
+        margin: 20px 0 10px 0;
+    }
+
+    & input, & textarea {
+        display: block;
+    }
+
+}
+
+.form__content__input {
+
+    & input, textarea {
+        width: 95%;
+    }
+
+    & input[type="text"], & input[type="email"], & input[type="tel"] {
+        height: 25px;
+        padding-left: 5px;
+    }
+}
+
+.form__content__button {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    & input {
+        width: 150px;
+        border-radius: 20px;
+        margin-top: 15px;
+        padding: 8px;
+    }
+}
+
+// footer
+.footer {
+    background-color: $footer-background-color;
+    padding: 20px 10px 20px 25px;
+}
+
+.link-container {
+    & a {
+        display: block;
+        color: $footer-link-text-color;
+        background-color: $footer-link-background-color;
+        border-left: 15px solid white;
+        margin-top: 2px;
+        padding: 2px 0 2px 15px;
+    }
+
+    & a:hover {
+        background-color: $footer-link-hover-color;
+        color: $footer-link-hover-text-color;
+    }
+}

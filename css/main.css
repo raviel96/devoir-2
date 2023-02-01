@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.25px;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 480px;
+  background-image: url("../../images/bkg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__title {
+  position: absolute;
+  top: 271px;
+  left: 29px;
+}
+
+.header__title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.header__menu p {
+  font-size: 1.2rem;
+}
+
+.main-section {
+  padding-bottom: 45px;
+}
+
+.article {
+  margin-top: 50px;
+}
+
+.article__image img {
+  width: 100%;
+  margin-left: 5px;
+}
+
+.article h2 {
+  font-size: 1.5rem;
+  margin: 15px 0 15px 5px;
+}
+.article a {
+  color: #549ff3;
+}
+.article p {
+  margin-left: 5px;
+}
+
+#submit-button {
+  background: linear-gradient(#b9bbde, #669);
+}
+
+#reset-button {
+  background: linear-gradient(#b8babb, #6f6e73);
+}
+
+#submit-button, #reset-button {
+  color: #fff;
+  border-width: 1px;
+}
+
+#submit-button:hover, #reset-button:hover {
+  background: linear-gradient(#666, #444);
+  cursor: pointer;
+}
+
+.form-section {
+  background: url(../../images/bkg-form.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 15px 0 10px 10px;
+}
+
+.form {
+  background-color: rgba(250, 250, 250, 0.5);
+  padding: 0 0 8px 10px;
+  border-radius: 10px;
+}
+.form h3 {
+  padding: 20px 0 15px 0;
+  font-size: 1.3rem;
+}
+.form h3, .form label {
+  color: #669;
+}
+.form label {
+  display: block;
+  margin: 20px 0 10px 0;
+}
+.form input, .form textarea {
+  display: block;
+}
+
+.form__content__input input, .form__content__input textarea {
+  width: 95%;
+}
+.form__content__input input[type=text], .form__content__input input[type=email], .form__content__input input[type=tel] {
+  height: 25px;
+  padding-left: 5px;
+}
+
+.form__content__button {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.form__content__button input {
+  width: 150px;
+  border-radius: 20px;
+  margin-top: 15px;
+  padding: 8px;
+}
+
+.footer {
+  background-color: #ff7fcf;
+  padding: 20px 10px 20px 25px;
+}
+
+.link-container a {
+  display: block;
+  color: #ededed;
+  background-color: rgba(120, 120, 120, 0.2);
+  border-left: 15px solid white;
+  margin-top: 2px;
+  padding: 2px 0 2px 15px;
+}
+.link-container a:hover {
+  background-color: rgba(120, 120, 120, 0.8);
+  color: #fff;
+}
